@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Fantasy Football</title>
+</head>
+
+<body>
+	
+<form action="/position_list" id="positions" method="POST">
+	<select name = "team">
+  		<option value="1">Arsenal</option>
+  		<option value="2">Bournemouth</option>
+  		<option value="3">Brighton</option>
+  		<option value="4">Burnley</option>
+  		<option value="5">Cardiff</option>
+  		<option value="6">Chelsea</option>
+  		<option value="7">Crystal Palace</option>
+  		<option value="8">Everton</option>
+  		<option value="9">Fulham</option>
+  		<option value="10">Huddersfield</option>
+  		<option value="11">Leicester</option>
+  		<option value="12">Liverpool</option>
+  		<option value="13">Man City</option>
+  		<option value="14">Man United</option>
+  		<option value="15">Newcastle</option>
+  		<option value="16">Southampton</option>
+  		<option value="17">Spurs</option>
+  		<option value="18">Watford</option>
+  		<option value="19">West Ham</option>
+  		<option value="20">Wolves</option>
+	</select>
+	<select name = position>
+		<option value="1">Goalkeepers</option>
+		<option value="2">Defenders</option>
+		<option value="3">Midfielders</option>
+		<option value="4">Forwards</option>
+	</select>
+	<input type="submit" value="Display">
+</form>
+
+</br>
+
+<strong>{{ team }}</strong>
+
+</br>
+
+{{position}}: {{ position_list }}
+
+</br>
+
+</body>
+
+</html>
